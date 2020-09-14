@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: rgb(29, 29, 29);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+}
+
+#menu {
+  display: flex;
+  background: rgb(63, 63, 63);
+}
+
+#menu a {
+  display: block;
+}
+
+#menu > li > a {
+  padding: 1rem;
+}
+
+#menu li:hover > a {
+  color: rgb(255, 166, 166);
+}
+
+#menu li:hover .hidden {
+  display: block;
+}
+
+.hidden {
+  display: none;
+  background: rgb(53, 53, 53);
+  position: absolute;
+  width: auto;
+}
+
+.hidden li a {
+  padding: 0.6rem;
+  border-bottom: 1px solid black;
+}
